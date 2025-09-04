@@ -77,7 +77,7 @@ def main():
     bar.finish()
 
     while True:
-        print("\033[3m▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ \033[30m▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ \033[94m▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ \033[0m")
+        print("\033[3m▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ \033[30m▒▒ ▒▒ ▒▒ ▒▒ ▒ \033[94m▒▒ ▒▒ ▒▒ ▒▒ ▒▒ \033[0m")
         print(("\033[32m [÷]▒▒\033[92m▒▒BUILD ▒▒ ATTACK▒▒ \033[33mFLOODING▒▒ THE▒▒TARGET▒▒ {}".format(len(socket_list))))
 
         for s in socket_list:
