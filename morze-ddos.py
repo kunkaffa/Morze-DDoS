@@ -77,7 +77,7 @@ def main():
     bar.finish()
 
     while True:
-        print(("\033[32m[÷]\033[31m▒▒\033[92m▒▒MORZE\033[33m▒▒REQUEST\033[31m▒▒SENT\033[37m▒".format(len(socket_list))))
+        print(("\033[32m[÷]\033[31m▒▒\033[92m▒▒MORZE\033[33m▒▒REQUEST\033[31m▒▒SENT\033[37m▒::.".format(len(socket_list))))
 
         for s in socket_list:
             try:
@@ -86,7 +86,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[33m   {}=>\033[37m▒▒\033[33m▒▒CONNECT\033[96m▒▒THE\033[97m▒▒WEBS\033[31m▒▒\033[96m▒▒\033[35m".format("\n")))
+            print(("\033[33m   {}=>\033[37m▒▒\033[33m▒▒CONNECT\033[96m▒▒THE\033[97m▒▒WEBS\033[31m▒▒\033[96m▒▒\033[35m:..".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
