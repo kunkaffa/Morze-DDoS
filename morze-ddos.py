@@ -77,7 +77,7 @@ def main():
     bar.finish()
 
     while True:
-            print(("\033[32m [÷]\033[31m▒▒▒▒\033[92m\033[31m▒▒BUILD\033[33m▒▒ATTACK▒▒▒▒\035[33mFLOODING▒▒THE▒▒TARGET▒▒{}".format(len(socket_list))))
+        print(("\033[32m [÷]\033[31m▒▒▒▒\033[92m\033[31m▒▒BUILD\033[33m▒▒ATTACK▒▒▒▒\035[33mFLOODING▒▒THE▒▒TARGET▒▒{}".format(len(socket_list))))
 
         for s in socket_list:
             try:
