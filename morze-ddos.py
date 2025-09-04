@@ -86,7 +86,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[33m   {}=>\033[37m▒▒\033[33m▒▒CONNECT\033[96m▒▒THE\033[97m▒▒WEBS\033[31m▒▒\033[96m▒▒\033[35m:..".format("\n")))
+            print(("\033[33m   {}:::\033[37m▒▒\033[33m▒▒CONNECT\033[96m▒▒THE\033[97m▒▒WEBS\033[31m▒▒\033[96m▒▒\033[35m::".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
